@@ -12,7 +12,7 @@ def words_starting_with_un_and_ending_with_ing(text)
     matching_words = word.scan(/\bun(\w*)ing/)
       matches << matching_words
   end
-  matches.flatten
+  return matches.flatten
 end
 
 def words_five_letters_long(text)

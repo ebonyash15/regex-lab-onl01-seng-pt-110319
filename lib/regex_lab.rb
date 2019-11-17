@@ -8,8 +8,7 @@ end
 
 def words_starting_with_un_and_ending_with_ing(text)
   matches = []
-  if text.scan(/\bun(\w*)ing/)
-    matches << text
+  if text.scan(/\bun(\w*)ing/) { |match| matches << match }
   end
   matches
 end

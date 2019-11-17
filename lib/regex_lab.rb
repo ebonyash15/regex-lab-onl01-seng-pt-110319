@@ -8,9 +8,9 @@ end
 
 def words_starting_with_un_and_ending_with_ing(text)
   matches = []
-  if text.scan(/\bun(\w*)ing/) { |match| matches << match }
+  if text.scan(/\bun(\w*)ing/) { |match| matches << "un#{match}ing" }
   end
-  matches
+  matches.flatten
 end
 
 def words_five_letters_long(text)

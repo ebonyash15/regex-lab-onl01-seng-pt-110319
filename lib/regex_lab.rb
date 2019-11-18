@@ -9,7 +9,7 @@ end
 def words_starting_with_un_and_ending_with_ing(text)
   matches = []
   text.split(', ').each do |word|
-    word.scan(/\bun(\w*)ing/).each do |matching_word|
+    word.scan(/\b(un)(\w*)(ing)/).each do |matching_word|
       matches << "un#{matching_word.to_s}ing"
     end
   end

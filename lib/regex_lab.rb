@@ -11,11 +11,11 @@ text.scan(/\b(un\w*ing)/).flatten
 end
 
 def words_five_letters_long(text)
-  p text.scan(/\b\w{5}\b/).flatten
+  text.scan(/\b\w{5}\b/).flatten
 end
 
 def first_word_capitalized_and_ends_with_punctuation?(text)
-    !!text.match(/\A[A-Z]\w*\.\z/)
+  p  !!text.match(/\A[A-Z]\w*\.\z/)
 end
 
 def valid_phone_number?(phone)

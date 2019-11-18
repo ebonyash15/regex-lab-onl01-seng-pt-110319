@@ -11,7 +11,7 @@ def words_starting_with_un_and_ending_with_ing(text)
   text.split(', ').each do |word|
     matches << word.scan(/\b(un\w*ing)/)
   end
-  p matches
+  p matches.flatten
 end
 
 def words_five_letters_long(text)

@@ -11,7 +11,7 @@ text.scan(/\b(un\w*ing)/).flatten
 end
 
 def words_five_letters_long(text)
-  p text.scan(/^\w{5}\s/).flatten
+  p text.scan(/\w{5}\s/).flatten
 end
 
 def first_word_capitalized_and_ends_with_punctuation?(text)
